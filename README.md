@@ -53,10 +53,10 @@ Each category adds to the score → higher score = stronger password.
 
 ```bash
 # Clone this repository
-git clone https://github.com/<your-username>/<repo-name>.git
+git clone https://github.com/mahaaldalpatia/Password_Generator_-_Strength_Analyser.git
 
 # Navigate to the project directory
-cd <repo-name>
+cd Password_Generator_-_Strength_Analyser
 
 # Run the program
-python password_generator.py
+python password_gen.py
