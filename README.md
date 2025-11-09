@@ -1,64 +1,62 @@
-🔐 Strong Password Generator
+# 🔐 Strong Password Generator
 
-A simple Python project that generates strong, random passwords and checks how secure they are.
-Made to practice Python basics, logic building, and a bit of user interaction in the console.
+A simple and fun Python project that generates strong, random passwords and checks their strength.  
+Built to practice Python basics, loops, conditionals, and working with built-in modules like `random` and `string`.
 
-🚀 Features
+---
 
-Generate random passwords of custom length
+## 🚀 Features
 
-Analyze password strength (Weak / Medium / Strong)
+- 🔄 Generate random passwords of any custom length  
+- 🧠 Analyze password strength (Weak / Medium / Strong)  
+- 🔢 Uses uppercase, lowercase, numbers, and special symbols  
+- 🧱 Minimum password length: 8  
+- 🖥️ Simple, menu-driven console interface  
 
-Uses uppercase, lowercase, numbers, and special characters
+---
 
-Minimum password length: 8
+## 🧠 How It Works
 
-Simple text-based menu system
+1. Choose what you want to do:
+   - Create a new password  
+   - Analyze the strength of your existing password  
+2. When creating a password:
+   - Enter a desired length (minimum 8 characters)  
+   - The program generates a random password using letters, digits, and punctuation  
+3. You can then:
+   - Check its strength  
+   - Generate another password  
+   - Exit the program  
 
-🧠 How It Works
+---
 
-Choose if you want to:
+## 💪 Password Strength Logic
 
-Create a new password
+The strength is calculated based on the presence of:
 
-Check the strength of an existing password
+- Uppercase letters  
+- Lowercase letters  
+- Numbers  
+- Special symbols  
 
-When creating one, just enter the length you want (≥ 8).
+Each category adds to the score → higher score = stronger password.
 
-The program builds a random password using letters, digits, and symbols.
+| Score | Criteria Met | Strength |
+|:------|:--------------|:----------|
+| 1–2 | Few character types | Weak |
+| 3 | Most character types | Medium |
+| 4 | All character types | Strong |
 
-You can then analyze its strength or generate another one.
+---
 
-💪 Password Strength Logic
+## ⚙️ How to Run
 
-It checks your password for:
-
-Uppercase letters
-
-Lowercase letters
-
-Numbers
-
-Special symbols
-
-Each type adds to your score → higher score = stronger password.
-
-Score	Strength
-1–2	Weak
-3	Medium
-4	Strong
-⚙️ How to Run
-# Clone this repo
+```bash
+# Clone this repository
 git clone https://github.com/<your-username>/<repo-name>.git
 
-# Move into the folder
+# Navigate to the project directory
 cd <repo-name>
 
-# Run the script
+# Run the program
 python password_generator.py
-
-🧰 Requirements
-
-Python 3.x
-
-Modules used: random, string (both built-in)
