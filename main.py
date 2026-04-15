@@ -1,7 +1,7 @@
 import random
 import string
+
 def pass_gen():
-    
     while True:
         length = int(input("Choose Password Length :"))
         if length >= 8:
@@ -23,8 +23,6 @@ def pass_gen():
             else:
                 print("Thank You!!")
                 break
-       
-        
         else:
             print("Invalid Length!!!\nChoose a Minimum Length of 8 Characters!")
             again = input("Wanna Try Again(Yes/No): ").lower()
@@ -45,37 +43,31 @@ def analysis(password):
             has_digit = True
         elif ch in string.punctuation: 
             has_symbol = True
-
     score = 0
     if has_upper: score += 1
     if has_lower: score += 1
     if has_digit: score += 1
     if has_symbol: score += 1
-
-    if score <=2:
+    if score <= 2:
         print("Password Strength :Weak")
     if score == 3:
         print("Password Strength :Medium")
     if score == 4 or score == 5:
         print("Password Strength :Strong")
-        
-    
 
 print("---Strong Password Generator---")
 n = int(input("1.Create New Password\n2.Password Strength Analysis\n3.Exit\nEnter Choice:"))
-
 if n==1:
     pass_gen()
 elif n==2:
     user_pass = input("Enter your Password:")
     analysis(user_pass)
-    d =int(input("1.Create New Password\n2.Password Strength Analysis\n3.Exit\nEnter Choice:"))
+    d = int(input("1.Create New Password\n2.Password Strength Analysis\n3.Exit\nEnter Choice:"))
     if d==1:
         pass_gen()
     elif d==2:
         analysis()
     else:
         print("Thank You!!")
-
 else:
-    print(end ="")
+    print(end="")
